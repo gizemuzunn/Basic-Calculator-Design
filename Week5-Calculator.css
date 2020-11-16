@@ -1,0 +1,53 @@
+/* To change the family-font,We need to  import the url of fontfamily that
+you have already found. */
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico|Oxygen);
+body {background-color: rosybrown;}
+
+#calculator {width: 350px;
+background-color: #4a4a4a;
+height: 100%;
+/* order values of margin are top-right-bottom-left  */
+margin: 1px auto; /*top-bottom / right-left  */
+padding: 0.2em 0 1em 0;
+border-radius: 25px;
+box-shadow:  5px 5px 15px 3px #111111;
+font-family: 'Oxygen';
+}
+#calculator .row{
+    text-align: center;
+}
+#calculator .row #screen{ background-color: #a0a0a0;
+width: 85%;
+min-height: 1.2em;
+text-align: right;
+margin: 0 0.5em;
+padding: 0 0.5em 0 0;
+font-size: 2em;
+color: #2a2a2a;
+border: 1px solid #999999;
+border-radius: 0.3em;
+font-family: 'Droid Sans Mono';
+}
+#calculator .row div {
+    /* This part includes numbers and some calculation symbols */
+    width: 50px;
+    background-color: #e2e2e2;
+    border: 1px solid #505050;
+    font-weight: bold;
+    display: inline-block;  /* To make a line */
+    padding: 8px 0;
+    border-radius: 15px;
+    margin: 2px 5px;
+    box-shadow: 2px 2px 1px 1px #2a2a2a;
+    
+}
+#calculator .button.double{
+    width: 112px;
+}
+#calculator p{
+    /* You can use left  if and only if when u use position :relative */
+    position: relative;
+    margin:0;
+    left: 5%;
+    font-family: 'Pacifico';
+}
